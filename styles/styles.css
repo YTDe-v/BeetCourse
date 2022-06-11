@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+/*** 
+some general styles 
+***/
 
 .center{
     margin: auto;
@@ -26,13 +29,6 @@
     outline: 2px solid blue;
 }
 
-.title{
-    text-align: center;
-    margin: 0;
-    font-size: 24px;
-    font-weight: 300;
-}
-
 .logo{
     display: block;
     text-align: center;
@@ -40,6 +36,16 @@
     padding-bottom: 24px;
 }
 
+.title{
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/***
+Button style
+***/
 
 .btn_submit{
     width: 100%;
@@ -52,16 +58,14 @@
     font-size: 14px;
     font-weight: 500;
 }
+
 .btn_submit:hover{
      background-color: #2c974b;
 }
 
-
-
-
-.pswd_area{
-    position: relative;
-}
+/***
+styling the links
+***/
 
 .link{
     text-decoration: none;
@@ -70,6 +74,12 @@
 
 .link:hover{
     text-decoration: underline;
+}
+
+/*Move the forget password to the top right relatively to .pswd_area*/
+
+.pswd_area{
+    position: relative;
 }
 
 .fg_pswd{
@@ -81,9 +91,12 @@
 }
 
 .fg_pswd:hover{
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
+
+/***
+Styling the form
+***/
 
 .form_signin{
     border: 1px solid black;
@@ -95,7 +108,6 @@
     margin-top: 16px;
 }
 
-
 .new_acc{
     border: 1px solid #d8dee4;
     width: 300px;
@@ -104,6 +116,9 @@
     border-radius: 6px ;
 }
 
+/***
+footer links
+***/
 
 .list{
     list-style: none;
