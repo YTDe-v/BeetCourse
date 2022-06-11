@@ -14,12 +14,18 @@
     margin-bottom: 8px;
 }
 
-
 .input{
     width: 100%;
     margin: 5px 0 16px 0;
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: 1px solid #d0d7de;;
 }
 
+.input:focus{
+    
+    outline: 2px solid blue;
+}
 
 .title{
     text-align: center;
@@ -50,9 +56,14 @@
 .pswd_area{
     position: relative;
 }
+
 .link{
     text-decoration: none;
     color: #0969da
+}
+
+.link:hover{
+    text-decoration: underline;
 }
 
 .fg_pswd{
@@ -61,6 +72,11 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.fg_pswd:hover{
+    text-decoration: none;
+    
 }
 
 .form_signin{
@@ -96,7 +112,7 @@
 
 .footer_links{
     padding: 40px;
-    margin-top:16px;
+    margin-top:40px;
     font-size:12px
 }
 
