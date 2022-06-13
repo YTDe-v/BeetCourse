@@ -6,7 +6,7 @@
 
 body{
   margin: 0;
-  
+  font-family: sans-serif;
 }
 
 .link{
@@ -36,6 +36,8 @@ body{
   border: 1px solid #dddfe2;;
   border-radius: 6px;
   width: 364px;
+/*change the thin vertical line that flashes*/
+  caret-color: #1877f2;
 }
 
 .input:focus{
@@ -46,6 +48,7 @@ body{
 /*** 
    Log in btn
 ***/
+
 .login{
   background-color: #1877f2;
   border: 0;
@@ -58,11 +61,16 @@ body{
     width: 364px;
 
 }
+ .login:hover{
+  background-color: #166fe5;
+ }
 
 
 /*** 
    create new account btn
 ***/
+
+
 
 .btn_cr{
   border: none;
@@ -76,6 +84,7 @@ body{
 
 .btn_cr:hover{
   text-decoration: none;
+  background-color: #36a420;
 }
 
 
@@ -83,6 +92,7 @@ body{
 /*** 
    create page div
 ***/
+
 
 
 .create_page{
@@ -94,9 +104,6 @@ body{
   font-weight: 600;
   color: #000;
 }
-
-
-
 
 .main{
   background-color: #f0f2f5;
