@@ -67,14 +67,17 @@ body{
     width: 100%;
 }
 
+
 .input:focus{
     border-color: #1a73e8;
 }
+
 
 .input-holder{
     position: relative;
 
 }
+
 
 .placeholder{
     position: absolute;
