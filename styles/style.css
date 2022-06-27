@@ -4,13 +4,26 @@
   box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
 body{
     padding: 0;
     margin: 0;
     color: #544837;
     background-color: #FEEFE3;
     font-family: sans-serif;
+    
+    
 }
+
+.bg-curves{
+    width: 1133px;
+    position: absolute;
+    left: 30%;
+    z-index: -10;
+}
+
 
 .wrapper{
     
@@ -22,10 +35,11 @@ body{
 
 .img{
     display: block;
-    max-width: 100%;
+    
 }
 
 .nav{
+    
     padding: 1.5rem 0;
     display: flex;
     align-items: center;
@@ -35,36 +49,42 @@ body{
     display: block;
 }
 
+
 .nav__item{
-    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 .nav__link{
     text-decoration: none;
     text-transform: capitalize;
-    color: #7D8790;
-    
-
-}
-
-.nav__link:hover{
-    color: #ED9B59;
+    color: #7D8790;    
+    position: relative;
 }
 
 .nav__link::after{
     content: '';
     display: block;
     height: 5px;
-    width: 0px;
+    width: 0;
     border-radius: 100%;
     margin: 0 auto;
     background-color: #ED9B59;
     margin-top: 10px;
     transition: all ease-in-out 100ms;
+    position: absolute;
+    left: 50%;
+}
+.nav__link:hover{
+    color: #ED9B59;
 }
 
 .nav__link:hover::after{
     width: 5px;
 }
+
 
 .nav__list{
     list-style: none;
@@ -108,8 +128,6 @@ body{
 }
 
 
-
-
 .btn-submit{
     border: 0;
     cursor: pointer;
@@ -119,41 +137,48 @@ body{
 /* header section */
 
 
-
 .header{
     display: flex;
     justify-content: space-between;
     padding: 40px 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
+
 
 .header__text{
     max-width: 520px;
     width: 100%;
 }
+
+
 .header__title{
     margin-top: 160px;
 }
+
 
 .header__title--small{
     font-size: 14px;
     margin-bottom: 10px;
 }
 
+
 .header__title--big{
     font-size: 58px;
     margin-bottom: 56px;
 }
 
+
 .header__title--orange{
     color: #ED9B59;
 }
+
 
 .header__content{
     font-size: 20px;
     letter-spacing: 1.1px;
     
 }
+
 
 .header__form{
     margin-top: 22px;
@@ -167,6 +192,7 @@ body{
     box-shadow: 0px 10px #1A1D32;
 }
 
+
 .header__input{
     display: block;
     width: 100%;
@@ -176,9 +202,11 @@ body{
     
 }
 
+
 .header__input:focus{
     outline: 0;
 }
+
 
 .header__numbers{
     margin-top: 143px;
@@ -186,16 +214,19 @@ body{
     justify-content: space-between;
 }
 
+
 .col{
     width: 30%;
     padding: 10px;
 }
+
 
 .col__num{
     font-size: 56px;
     font-weight: 700;
     text-align: center;
 }
+
 
 .col__num--brown{
     color: #B25E21;
@@ -248,5 +279,5 @@ body{
     bottom: 0;
     z-index: -1;
     bottom: 0;
-    left: -100px; 
+    left: -88px; 
 }
