@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- css reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css style -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -17,342 +21,92 @@
             <ul class="nav__list">
                 <li class="nav__item">
                     <a href="" class="nav__link">
-                        product
+                        Home
                     </a>
                 </li>
                 <li class="nav__item">
                     <a href="" class="nav__link">
-                        customers
+                        Members
                     </a>
                 </li>
                 <li class="nav__item">
                     <a href="" class="nav__link">
-                        pricing
+                        Blog
                     </a>
                 </li>
                 <li class="nav__item">
                     <a href="" class="nav__link">
-                        resources
+                        Privacy
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        contact
                     </a>
                 </li>
             </ul>
 
 
             <div class="nav__btns">
-                <a href="#" class="btn btn--white">Sign in</a>
-                <a href="#" class="btn btn--orange">sign up</a>
+                <a href="#" class="btn btn--transparent">Log in</a>
+                <a href="#" class="btn btn--orange btn--rd">Register</a>
             </div>
         </nav>
         
         <header class="header">
             <div class="header__text">
-                <h1 class="header__title">
-                    The Design Thinking superpowers
-                </h1>
-                <p class="header__subtitle">
-                    Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
-                </p>
-                <div class="header__btns">
-                    <a href="" class="btn btn--orange btn--big">Get started</a>
-                    <a href="" class="header__link"><svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8516 8.53032C16.591 8.96531 16.591 10.0347 15.8516 10.4697L2.1954 18.5027C1.44543 18.9439 0.5 18.4031 0.5 17.533V1.46697C0.5 0.596876 1.44543 0.0561381 2.1954 0.497293L15.8516 8.53032Z" fill="#FF9900"/>
-                        </svg>
-                        watch the video</a>
-                </div>
-            </div>
-            <div class="header__img">
-                <img src="images/header_img.jpg" alt="" class="img">
-            </div>
-        </header>
-
-
-        <div class="section services">
-            <h1 class="services__title">We design tools to unveil <br> your superpowers</h1>
-            <div class="services__list">
-                <div class="service">
-                    <div class="service__icon">
-                        <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_0_541)">
-                            <g opacity="0.848005" filter="url(#filter0_f_0_541)">
-                            <rect x="0.5" y="25" width="50" height="25" rx="12.5" fill="#7752BE"/>
-                            </g>
-                            <rect width="50" height="50" rx="19" fill="#7752BE"/>
-                            <path d="M29.1161 27.5982L19.9732 18.4554C19.8661 18.3393 19.7232 18.2857 19.5714 18.2857C19.5 18.2857 19.4196 18.3036 19.3571 18.3304C19.1429 18.4196 19 18.625 19 18.8571V32.2857C19 32.5179 19.1429 32.7232 19.3571 32.8125C19.4196 32.8393 19.5 32.8571 19.5714 32.8571C19.7232 32.8571 19.8661 32.7946 19.9732 32.6875L22.7589 29.9018L24.4643 33.9375C24.5893 34.2232 24.9196 34.3661 25.2143 34.2411L26.7946 33.5714C27.0804 33.4464 27.2232 33.1161 27.0982 32.8214L25.3036 28.5714H28.7143C28.9464 28.5714 29.1518 28.4286 29.2411 28.2143C29.3304 28.0089 29.2857 27.7589 29.1161 27.5982Z" fill="white"/>
-                            </g>
-                            <defs>
-                            <filter id="filter0_f_0_541" x="-26.6828" y="-2.18282" width="104.366" height="79.3656" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                            <feGaussianBlur stdDeviation="13.5914" result="effect1_foregroundBlur_0_541"/>
-                            </filter>
-                            <clipPath id="clip0_0_541">
-                            <rect width="51" height="50" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>
-                            
-                    </div>
-                    <div class="service__content">
-                        <h3 class="service__title"> Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
+                <div class="header__title">
+                    <h1 class="header__title--small header__title--orange">Becaue you deserve better!</h1>
+                    <p class="header__title--big">Get noticed for <span class="header__title--orange">who</span> <br>
+                        you are, <span class="header__title--orange">not what</span>  <br>
+                        you look like.</p>
                 </div>
                 
-                <div class="service">
-                    <div class="service__icon">
-                        <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_0_541)">
-                            <g opacity="0.848005" filter="url(#filter0_f_0_541)">
-                            <rect x="0.5" y="25" width="50" height="25" rx="12.5" fill="#7752BE"/>
-                            </g>
-                            <rect width="50" height="50" rx="19" fill="#7752BE"/>
-                            <path d="M29.1161 27.5982L19.9732 18.4554C19.8661 18.3393 19.7232 18.2857 19.5714 18.2857C19.5 18.2857 19.4196 18.3036 19.3571 18.3304C19.1429 18.4196 19 18.625 19 18.8571V32.2857C19 32.5179 19.1429 32.7232 19.3571 32.8125C19.4196 32.8393 19.5 32.8571 19.5714 32.8571C19.7232 32.8571 19.8661 32.7946 19.9732 32.6875L22.7589 29.9018L24.4643 33.9375C24.5893 34.2232 24.9196 34.3661 25.2143 34.2411L26.7946 33.5714C27.0804 33.4464 27.2232 33.1161 27.0982 32.8214L25.3036 28.5714H28.7143C28.9464 28.5714 29.1518 28.4286 29.2411 28.2143C29.3304 28.0089 29.2857 27.7589 29.1161 27.5982Z" fill="white"/>
-                            </g>
-                            <defs>
-                            <filter id="filter0_f_0_541" x="-26.6828" y="-2.18282" width="104.366" height="79.3656" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                            <feGaussianBlur stdDeviation="13.5914" result="effect1_foregroundBlur_0_541"/>
-                            </filter>
-                            <clipPath id="clip0_0_541">
-                            <rect width="51" height="50" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>
-                            
-                    </div>
-                    <div class="service__content">
-                        <h3 class="service__title">Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
-                </div>
+                <p class="header__content">
+                    You’re more than just a photo. You have stories to tell, and passions to share, and things to talk about that are more interesting than the weather. Because you deserve what dating deserves: better.
+                </p>
 
-                <div class="service">
-                    <div class="service__icon">
-                        <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_0_541)">
-                            <g opacity="0.848005" filter="url(#filter0_f_0_541)">
-                            <rect x="0.5" y="25" width="50" height="25" rx="12.5" fill="#7752BE"/>
-                            </g>
-                            <rect width="50" height="50" rx="19" fill="#7752BE"/>
-                            <path d="M29.1161 27.5982L19.9732 18.4554C19.8661 18.3393 19.7232 18.2857 19.5714 18.2857C19.5 18.2857 19.4196 18.3036 19.3571 18.3304C19.1429 18.4196 19 18.625 19 18.8571V32.2857C19 32.5179 19.1429 32.7232 19.3571 32.8125C19.4196 32.8393 19.5 32.8571 19.5714 32.8571C19.7232 32.8571 19.8661 32.7946 19.9732 32.6875L22.7589 29.9018L24.4643 33.9375C24.5893 34.2232 24.9196 34.3661 25.2143 34.2411L26.7946 33.5714C27.0804 33.4464 27.2232 33.1161 27.0982 32.8214L25.3036 28.5714H28.7143C28.9464 28.5714 29.1518 28.4286 29.2411 28.2143C29.3304 28.0089 29.2857 27.7589 29.1161 27.5982Z" fill="white"/>
-                            </g>
-                            <defs>
-                            <filter id="filter0_f_0_541" x="-26.6828" y="-2.18282" width="104.366" height="79.3656" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                            <feGaussianBlur stdDeviation="13.5914" result="effect1_foregroundBlur_0_541"/>
-                            </filter>
-                            <clipPath id="clip0_0_541">
-                            <rect width="51" height="50" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>
-                            
-                    </div>
-                    <div class="service__content">
-                        <h3 class="service__title">Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
-                </div>
+                <form action="" class="header__form">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.3">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 7C2 5.34315 3.34315 4 5 4H19C20.6569 4 22 5.34315 22 7V17C22 18.6569 20.6569 20 19 20H5C3.34315 20 2 18.6569 2 17V7ZM5 5.5H19C19.6497 5.5 20.203 5.91311 20.4114 6.49101L12.6934 11.6364C12.2735 11.9163 11.7265 11.9163 11.3066 11.6364L3.58857 6.491C3.79701 5.91311 4.35026 5.5 5 5.5ZM3.5 8.23473V17C3.5 17.8284 4.17157 18.5 5 18.5H19C19.8284 18.5 20.5 17.8284 20.5 17V8.23474L13.5254 12.8845C12.6017 13.5003 11.3983 13.5003 10.4746 12.8845L3.5 8.23473Z" fill="#1A1D32"/>
+                        </g>
+                    </svg>
+                    <input type="email" placeholder="Enter your email" class="header__input"/>
+                    <input type="submit" value="Get Started" class="btn-submit btn btn--orange btn--rd"/>                        
+                </form>
 
-                <div class="service">
-                    <div class="service__icon">
-                        <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_0_541)">
-                            <g opacity="0.848005" filter="url(#filter0_f_0_541)">
-                            <rect x="0.5" y="25" width="50" height="25" rx="12.5" fill="#7752BE"/>
-                            </g>
-                            <rect width="50" height="50" rx="19" fill="#7752BE"/>
-                            <path d="M29.1161 27.5982L19.9732 18.4554C19.8661 18.3393 19.7232 18.2857 19.5714 18.2857C19.5 18.2857 19.4196 18.3036 19.3571 18.3304C19.1429 18.4196 19 18.625 19 18.8571V32.2857C19 32.5179 19.1429 32.7232 19.3571 32.8125C19.4196 32.8393 19.5 32.8571 19.5714 32.8571C19.7232 32.8571 19.8661 32.7946 19.9732 32.6875L22.7589 29.9018L24.4643 33.9375C24.5893 34.2232 24.9196 34.3661 25.2143 34.2411L26.7946 33.5714C27.0804 33.4464 27.2232 33.1161 27.0982 32.8214L25.3036 28.5714H28.7143C28.9464 28.5714 29.1518 28.4286 29.2411 28.2143C29.3304 28.0089 29.2857 27.7589 29.1161 27.5982Z" fill="white"/>
-                            </g>
-                            <defs>
-                            <filter id="filter0_f_0_541" x="-26.6828" y="-2.18282" width="104.366" height="79.3656" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                            <feGaussianBlur stdDeviation="13.5914" result="effect1_foregroundBlur_0_541"/>
-                            </filter>
-                            <clipPath id="clip0_0_541">
-                            <rect width="51" height="50" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>
-                            
+                <div class="header__numbers">
+                    <div class="col">
+                        <p class="col__num">15K+</p>
+                        <p class="col__txt">Dates and matches made everyday</p>
                     </div>
-                    <div class="service__content">
-                        <h3 class="service__title">Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <div class="col">
+                        <p class="col__num col__num--brown">1456</p>
+                        <p class="col__txt">New members signup every day</p>
+                    </div>
+                    <div class="col">
+                        <p class="col__num">1M+</p>
+                        <p class="col__txt">Members from 
+                            around the world</p>
                     </div>
                 </div>
+      
             </div>
-            <div class="services__btn">
-                <a href="" class="btn btn--orange btn--big">sign up now</a>
-            </div>
-            
-        </div>
 
 
-
-
-        <div class="section info">
-
-
-
-            <!-- row1 -->
-
-
-            <div class="info__row1">
-                <div class="info__content">
-                    <h3 class="info__title">
-                        <span class="info__title--light">Effortless Validation for</span>
-                        Design Professionals
-                    </h3>
-                    <p class="info__text">
-                        The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. 
-                    </p>
+            <div class="header__img">
+                <img src="images/couple.png" alt="" class="img">
+                <img src="images/icons_top.png" class="header__icons--top" alt="">
+                <div class="header__showcase">
+                    <img src="images/showcase-col1.png" class="header__showcase--col1 img" alt="">
+                    <img src="images/showcase-col2.png" class="header__showcase--col2 img" alt="">
                     
-                    <h6 class="info__title--secondary">
-                        Lorem, ipsum.
-                    </h6>
-                    <p class="info__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, veniam.
-                    </p>
-
-                    <h6 class="info__title--secondary">
-                        Lorem, ipsum.
-                    </h6>
-                    <p class="info__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, veniam.
-                    </p>
-
-                    <h6 class="info__title--secondary">
-                        Lorem, ipsum.
-                    </h6>
-                    <p class="info__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, veniam.
-                    </p>
-
                 </div>
-                <div class="info__img">
-                    <img src="images/info_img_1.jpg" alt="" class="img">
-                </div>
+                <img src="images/shape.svg" class="shape">
+                <!-- <div class="header__showcase"></div> -->
             </div>
-            
-
-            <!-- row2 -->
-
-
-            <div class="info__row1">
-                <div class="info__img">
-                    <img src="images/info_img_1.jpg" alt="" class="img">
-                </div>
-                <div class="info__content">
-                    <h3 class="info__title">
-                        <span class="info__title--light">Effortless Validation for</span>
-                        Design Professionals
-                    </h3>
-                    <p class="info__text">
-                        The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. 
-                    </p>
-                    
-                    <h6 class="info__title--secondary">
-                        Lorem, ipsum.
-                    </h6>
-                    <p class="info__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, veniam.
-                    </p>
-
-                    <h6 class="info__title--secondary">
-                        Lorem, ipsum.
-                    </h6>
-                    <p class="info__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, veniam.
-                    </p>
-
-                    <h6 class="info__title--secondary">
-                        Lorem, ipsum.
-                    </h6>
-                    <p class="info__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, veniam.
-                    </p>
-
-                </div>
-
-            </div>
-            
-
-
-            <!-- row3 -->
-
-
-            
-
-            <div class="info__row1">
-                <div class="info__content">
-                    <h3 class="info__title">
-                        <span class="info__title--light">Effortless Validation for</span>
-                        Design Professionals
-                    </h3>
-                    <p class="info__text">
-                        The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. 
-                    </p>
-                    
-                    <h6 class="info__title--secondary">
-                        Lorem, ipsum.
-                    </h6>
-                    <p class="info__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, veniam.
-                    </p>
-
-                    <h6 class="info__title--secondary">
-                        Lorem, ipsum.
-                    </h6>
-                    <p class="info__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, veniam.
-                    </p>
-
-                    <h6 class="info__title--secondary">
-                        Lorem, ipsum.
-                    </h6>
-                    <p class="info__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, veniam.
-                    </p>
-
-                </div>
-                <div class="info__img">
-                    <img src="images/info_img_1.jpg" alt="" class="img">
-                </div>
-            </div>
-            
-            
-
-        </div>
-
-        <footer class="section footer">
-            <a href="#" class="footer__logo">
-                <img src="images/Logo.png" alt="">
-            </a>
-
-            <div class="footer__links col1">
-                <a href="#" class="nav__link">About us</a>
-                <a href="#" class="nav__link">blog</a>
-                <a href="#" class="nav__link">contact</a>
-                <a href="#" class="nav__link">FAQ</a>
-            </div>
-
-            <div class="footer__links col2">
-                <a href="#" class="nav__link">About us</a>
-                <a href="#" class="nav__link">blog</a>
-                <a href="#" class="nav__link">contact</a>
-                <a href="#" class="nav__link">FAQ</a>
-            </div>
-
-            <div class="footer__cta">
-                <input type="text" name="" id="" class="footer__input"><br>
-                <a href="" class="btn btn--orange">sign up now</a>
-            </div>
-        </footer>
-    </div>
-
+        </header>
+    </div>    
 </body>
 </html>
