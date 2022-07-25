@@ -19,6 +19,7 @@
     --bg-year-clr: #171B29;
     --clr-white: #fff;
     --clr-green: #22A75D;
+    --clr-green-dark: #19A255;
     --clr-yellow:#FFD100;
     --clr-blue: #2278D4;
     --clr-blue-light:#0F87CA;
@@ -33,6 +34,7 @@
     /* max-width: 1600px;
     width: 100%;
     margin: 0 auto; */
+    overflow: hidden;
 }
 
 .section{
@@ -247,6 +249,7 @@ body{
     color: var(--clr-yellow);
 }
 
+
 .item2__foot{
     text-align: end;
 }
@@ -404,6 +407,13 @@ body{
 }
 
 
+
+@media (max-width: 380px) {
+    .item2__num{
+        font-size: 30px;
+    } 
+}
+
 /* === Years === */
 
 .years{
@@ -413,7 +423,7 @@ body{
 }
 
 .year{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     display: flex;
     /* justify-content: center;
     align-items: center; */
@@ -425,7 +435,11 @@ body{
     margin-bottom: 20px;
 }
 
-
+@media (max-width:500px) {
+    .year{
+        margin-right: 0 ;
+    }
+}
 
 .year__icon{
     border: 2px solid #fff;
@@ -459,22 +473,37 @@ body{
 
 
 /*=== figures ===*/
+
+
 .fig{
     position: relative;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    padding: 10%;    
 }
 
 
+
+@media (max-width:1000px){ 
+
+    .fig__shape{
+        display: none;
+    }
+}
+
 .fig__shape--top{
+    
     position: absolute;
     right: 0;
-    top: 20%;
+    top: 20.08%;
 }
 
 .fig__shape--bottom{
-    position: relative;
+    left: 0;
+    position: absolute;
     bottom: 0;
+    
 }
-
 
 .fig__bg{
     max-width: 100%;
@@ -483,12 +512,181 @@ body{
     
 }
 
-
 .fig__box{
-    /* width: 1024px;
-    height: 469px;
+    position: relative;
+    width: 60%;
+    color: var(--bg-color);
     background-color: #fff;
-    position: absolute;
-    top: 0; */
+    border-radius: 25px;
+    text-align: center;    
+    padding: 5% 10%;
+    margin-bottom: 40px;
 }
 
+.fig__box--pos1{
+    margin-left: auto;
+}
+
+.xfig__box--pos2{
+    margin: 0 auto;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    
+}
+@media (max-width: 800px){
+
+    .fig{
+        background-image: url(../images/bg-mobile.png);
+        padding: 20% 5% 0;
+    }
+
+    .fig__box{
+        width: 100%;
+        /* margin: 0 auto; */
+        
+    }
+
+}
+
+.fig__title{
+    font-size: 32px;
+    font-weight: blod;
+    margin-bottom: 40px;
+}
+
+.fig__footer{
+    margin-top: 20px;
+}
+
+
+/* 
+96px     1920px
+40px     375px
+
+6rem  120rem
+2.5rem  23.43rem
+
+
+1.65082323703rem + 3.62vw
+*/
+
+.fig__num{
+    
+    /* font-size: calc(40px + (96 - 40) * ((100vw - 375px) / (1920 - 375))); */
+    /* font-size: 96px; */
+     /* font-size: clamp(20px, 50vw , 80px);*/
+    /* font-size: clamp(2.5rem, 1.65rem + 3.62vw , 6rem); */
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.fig__num--green{
+    color: var(--clr-green-dark);
+}
+
+.fig__num--gold{
+    color: var(--clr-yellow)
+}
+
+
+@media (max-width: 1300px) {
+    .fig__num{
+        font-size: 40px;    
+    }
+
+
+}
+
+
+@media (max-width: 1000px) {
+    .fig__num{
+        font-size: 30px;    
+    }
+    .fig__title{
+        font-size: 22px;
+    }
+
+}
+
+
+.fig__tkn{
+    text-align: right;
+}
+
+
+/* === footer ===  */
+
+.footer{ 
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 100px;
+    /* overflow: hidden; */
+    /* background-image: url(../images/footer__bg.png);
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: 435px -200px;*/
+} 
+
+.footer::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/footer__bg.png);
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: 100px;
+    width: 100%;
+    height: 200%;
+    transform: rotate(-10deg);
+    z-index: -1;
+}
+
+.footer__nav{
+    margin-bottom: 120px;
+}
+
+.footer__list{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link{
+    color: #fff;
+}
+
+.footer__item + .footer__item{
+    margin-left: 196px;
+    
+}
+
+
+
+.footer__contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__icon{
+    text-decoration: none;
+}
+
+.contact__icon, .contact__icon{
+    margin-left: 40px;
+}
+
+
+@media (max-width:1000px) {
+    .footer__nav{
+        display: none;
+    }
+
+    .footer__contact{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__icons{
+        margin: 40px;
+    }
+}
