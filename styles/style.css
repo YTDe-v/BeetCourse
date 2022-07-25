@@ -168,8 +168,9 @@ body{
 
 
 @media (max-width:1000px){
-
-
+    .logo{
+        margin-right: 0px;
+    }
 
     .nav-toggle{
         display: block;
