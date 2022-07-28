@@ -10,6 +10,12 @@ body{
      margin: 0 auto;
 }
 
+
+
+.bold{
+     font-weight: 700;
+}
+
 // === header section ===
 
 .header{
@@ -208,7 +214,215 @@ body{
 
 }
 
+// === Clients ===
 
+.clients{
+     padding: 150px 0px;
+     &__list{
+          display: grid;
+          grid-template-columns: repeat(3,30%);
+          column-gap: 5%;
+     }
+
+     &__title{
+          font-size: $h2-size;
+          color: $primary;
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 60px;
+     }
+
+     .client{
+          background-color: $creamy;
+          padding: 50px 40px;
+          text-align: center;
+          &__testimonial{
+               font-size: 18px;
+               font-family: $ff-secondary;
+               color: $primary;
+               margin-bottom: 30px;
+          }
+          &__name{
+               font-weight: 700;
+               font-size: 20px;
+               color: $primary;
+               margin-bottom: 8px;
+          }
+          &__company{
+               font-size: 14px;
+               font-family: $ff-secondary;
+               font-size: 14px;
+          }
+     }
+}
+
+
+// ==== numbers ====
+
+.numbers{
+     background-color: $secondary;
+     color: #fff;
+     
+     &__list{
+          display: flex;
+          justify-content: space-between;
+          padding: 100px 0px;
+     }
+     
+     &__number{
+          
+
+     }
+
+     .number{
+          &__fig{
+               font-size: 60px;
+               font-weight: 700;
+               margin-bottom: 16px;
+          }
+
+          &__title{
+               font-size: 20px;
+               font-family: $ff-secondary;
+               
+          }
+     }
+
+}
+
+
+// === plans ===
+
+
+
+.plan{
+     padding: 150px 0;
+     &__list{
+          display: grid;
+          grid-template-columns: repeat(4, 25%);
+     }
+     &__title{
+          font-size: $h2-size;
+          color: $primary;
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 60px;
+     }
+
+     &__highlight{
+          background-color: $secondary;
+          
+     }
+     &__highlight  li,
+     &__highlight  p {
+          color: $white;
+     }
+     &__info{
+          text-align: center;  
+          
+     }
+     &__period{
+          font-weight: 700;
+          color: $secondary;
+          margin-bottom: 16px;
+     }
+
+     &__price{
+          font-weight: 700;
+          font-size: 32px;
+          color: $primary;
+          margin-bottom: 40px;
+     }
+
+     .feature{
+          color: $primary;
+          margin-bottom: 50px;
+          &__title{
+               border-bottom: 1px solid $primary;
+               font-size: 14px;
+               font-family: $ff-secondary;
+               margin-bottom: 13px;
+          }
+     }
+
+     &__btn{
+          background-color: $primary;
+          color: $white;
+          padding: 11px 35px;
+          margin-bottom: 50px;
+          font-size: 18px;
+     }
+
+     
+}
+
+
+// === footer ===
+
+.footer{
+     &__container{
+          background-color: $creamy;
+     }
+     
+     
+     &__top{
+          padding: 100px 0px;
+          
+     }
+     
+     
+     &__txt{
+          color: $primary;
+          width: 297px;
+     }
+     
+     &__title-col{
+          font-weight: 700;
+          color: $primary;
+          font-size: $h6-size;
+          margin-bottom: 16px;
+     }
+
+     &__top{
+          
+          // display: grid;
+          // grid-template-columns: repeat(4,25%);
+          display: flex;
+          justify-content: space-between;
+
+     }
+
+     &__item{
+          margin-bottom: 16px;
+     }
+
+     &__link{
+          text-decoration: none;
+          font-size: 16px;
+          color: $primary;
+     }
+
+     &__bottom{
+          background-color: $white;
+          display: flex;
+          justify-content: space-between;
+          padding: 40px 0;
+          
+          
+
+     }
+
+     &__copyright{
+          font-family: $ff-secondary;
+          font-size: 12px;
+     }
+
+     &__policy-link{
+          text-decoration: none;
+          font-family: $ff-secondary;
+          font-size: 12px;
+     }
+}
 
 
 
