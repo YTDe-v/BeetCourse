@@ -283,12 +283,10 @@ body {
 }
 
 .steps {
-  display: none;
   background-color: black;
   padding: 50px;
 }
 .steps__container {
-  width: 800px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
