@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal {
+            /* background-color: #000;
+            opacity: .3; */
+            /* to stop inherit behavior of opacity */
+            background-color: rgba(0, 0, 0, .3);
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding-top: 100px;
+            z-index: 100;
+        }
+        .modal__content{
+            background-color: #000;
+            opacity: 1;
+            padding: 30px;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .modal__close {
+            font-size: 50px;
+            display: block;
+            margin-left: auto;
+            background-color: transparent;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <input type="button" value="Open" onclick="open_modal()">
+
+    
+    <div class="modal">
+        <div class="modal__content">
+            <input type="button" value="&times;" class="modal__close" onclick="close_modal()">
+            
+            <p class="modal__text">Lorem ipsum dolor sit amet consectetur.</p>    
+        </div>
+    </div>
+    <script src="Q_02.js"></script>
+</body>
+</html>
